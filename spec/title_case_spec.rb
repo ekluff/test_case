@@ -15,7 +15,7 @@ describe('String#title_case') do
   end
 
   it ("allows capitalization of only the first letters of words") do
-    expect(("McDuFf").title_case()).to(eq("Mcduff"))
+    expect(("RaCecar").title_case()).to(eq("Racecar"))
   end
 
   it ("does not capitalize define prepositions in the middle of a string") do
@@ -25,5 +25,13 @@ describe('String#title_case') do
   it ("always capitalizes the first word of a string") do
     expect(("apud Smith, Jones").title_case()).to(eq("Apud Smith, Jones"))
   end
+
+  #it ("leaves special defined words as is") do
+  #  expect(("McDuff and the Jacks").title_case()).to(eq("McDuff and the Jacks"))
+  #end
+
+  #See comment in title_case.rb
+
+
 
 end
