@@ -26,12 +26,4 @@ describe('String#title_case') do
     expect(("apud Smith, Jones").title_case()).to(eq("Apud Smith, Jones"))
   end
 
-  #it ("leaves special defined words as is") do
-  #  expect(("McDuff and the Jacks").title_case()).to(eq("McDuff and the Jacks"))
-  #end
-
-  #See comment in title_case.rb
-
-
-
 end
